@@ -122,4 +122,9 @@
             android:defaultValue="false" />
     </PreferenceCategory>
 
+    <PreferenceScreen
+        android:fragment="org.cyanogenmod.cmparts.statusbar.QSLayout"
+        android:key="qslayout_settings"
+        android:title="@string/qs_tiles_title" />
+
 </PreferenceScreen>
