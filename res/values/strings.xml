@@ -693,4 +693,8 @@
     <string name="battery_fully_charged_sound_ringtone_title">Notification sound</string>
     <string name="battery_fully_charged_sound_ringtone_silent">Silent</string>
 
+    <!-- Qs easy tile add -->
+    <string name="single_tap_tile_add_title">Easy tile add</string>
+    <string name="single_tap_tile_add_summary">Add quick tiles easily from qs customizer by simply tapping on them instead of dragging them</string>
+
 </resources>

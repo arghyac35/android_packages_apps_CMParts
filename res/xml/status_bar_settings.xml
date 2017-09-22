@@ -162,4 +162,10 @@
 
     </PreferenceCategory>
 
+     <cyanogenmod.preference.SystemSettingSwitchPreference
+        android:key="quick_tile_add"
+        android:title="@string/single_tap_tile_add_title"
+        android:summary="@string/single_tap_tile_add_summary"
+        android:defaultValue="false"/>
+
 </PreferenceScreen>
