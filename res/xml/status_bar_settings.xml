@@ -150,4 +150,16 @@
         android:key="qslayout_settings"
         android:title="@string/qs_tiles_title" />
 
+    <PreferenceCategory
+        android:key="quicksettings_tiles"
+        android:title="@string/quicksettings_tiles_category">
+
+        <cyanogenmod.preference.SecureSettingSwitchPreference
+            android:key="qs_data_advanced"
+            android:title="@string/qs_advanced_data_title"
+            android:summary="@string/qs_advanced_data_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
