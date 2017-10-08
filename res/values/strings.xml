@@ -687,4 +687,10 @@
     <string name="qs_advanced_data_title">Advanced data tile</string>
     <string name="qs_advanced_data_summary">Enable one tap action to enable or disable data</string>
 
+    <!-- Battery fully charged sound -->
+    <string name="battery_fully_charged_sound_enabled_title">Battery fully charged sound</string>
+    <string name="battery_fully_charged_sound_enabled_summary">Play a sound when battery fully charged</string>
+    <string name="battery_fully_charged_sound_ringtone_title">Notification sound</string>
+    <string name="battery_fully_charged_sound_ringtone_silent">Silent</string>
+
 </resources>
