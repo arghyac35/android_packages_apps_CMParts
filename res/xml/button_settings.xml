@@ -19,12 +19,6 @@
         android:key="button_settings"
         android:title="@string/button_pref_title">
 
-    <SwitchPreference
-        android:key="disable_nav_keys"
-        android:title="@string/disable_navkeys_title"
-        android:summary="@string/disable_navkeys_summary"
-        android:defaultValue="false" />
-
     <org.cyanogenmod.cmparts.input.ButtonBacklightBrightness
         android:key="button_backlight"
         android:title="@string/button_backlight_title"
