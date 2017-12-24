@@ -661,4 +661,10 @@
     <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
     <string name="network_traffic_autohide_threshold_title">Inactivity threshold</string>
     <string name="network_traffic_autohide_threshold_summary">The traffic display will be hidden if there\'s less than <xliff:g id="value">%1$s</xliff:g> <xliff:g id="unit" example="kB">%2$s</xliff:g>/s of traffic</string>
+
+
+ <!--Power menu on Secure Lockscreen -->
+    <string name="lockscreen_enable_power_menu_title">Show power menu lock screen</string>
+    <string name="lockscreen_enable_power_menu_summary">This option will only disable the power menu on secure lock screens</string>
+
 </resources>
