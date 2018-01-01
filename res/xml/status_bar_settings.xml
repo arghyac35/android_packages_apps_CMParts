@@ -34,8 +34,7 @@
         android:title="@string/network_traffic_settings_title"
         android:summary="@string/network_traffic_settings_summary" />
 
-    <PreferenceScreen
-        android:fragment="org.cyanogenmod.cmparts.statusbar.SecureSettingSwitchPreference"
+        <org.cyanogenmod.cmparts.statusbar.SecureSettingSwitchPreference
         android:key="qs_easy_toggle"
         android:title="@string/qs_easy_toggle_title"
         android:summary="@string/qs_easy_toggle_summary"
