@@ -17,6 +17,8 @@
 package org.cyanogenmod.cmparts.statusbar;
 
 import android.os.Bundle;
+import android.provider.Settings;
+import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v14.preference.SwitchPreference;
@@ -27,6 +29,11 @@ import cyanogenmod.preference.CMSystemSettingListPreference;
 
 import org.cyanogenmod.cmparts.R;
 import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.Map;
 
 public class StatusBarSettings extends SettingsPreferenceFragment
         implements OnPreferenceChangeListener {
@@ -130,20 +137,17 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             enableStatusBarBatteryDependents(value);
         }
           else if (preference == mBatteryBar) {
-            int value = Integer.parseInt((String) newValue);
             int index = mBatteryBar.findIndexOfValue((String) newValue);
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.BATTERY_BAR_LOCATION, value);
             mBatteryBar.setSummary(mBatteryBar.getEntries()[index]);
             updateBatteryBarOptions();
         } else if (preference == mBatteryBarStyle) {
-            int value = Integer.parseInt((String) newValue);
             int index = mBatteryBarStyle.findIndexOfValue((String) newValue);
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.BATTERY_BAR_STYLE, value);
             mBatteryBarStyle.setSummary(mBatteryBarStyle.getEntries()[index]);
         } else if (preference == mBatteryBarThickness) {
-            int value = Integer.parseInt((String) newValue);
             int index = mBatteryBarThickness.findIndexOfValue((String) newValue);
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.BATTERY_BAR_THICKNESS, value);
